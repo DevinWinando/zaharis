@@ -46,13 +46,13 @@ class ClientController extends Controller
     public function reservation(Request $request)
     {
         $uuid = Str::uuid();
-        $request->validate([
-            'nama' => 'required',
-            'email' => 'required',
-            'telepon' => 'required',  
-            'mulai' => 'required',
-            'selesai' => 'required',
-        ]);
+        // $request->validate([
+        //     'nama' => 'required',
+        //     'email' => 'required',
+        //     'telepon' => 'required',  
+        //     'mulai' => 'required',
+        //     'selesai' => 'required',
+        // ]);
         
         $hargaTipe = TipeKamar::find($request->tipe)->harga;
         $mulai = Carbon::parse($request->mulai);
