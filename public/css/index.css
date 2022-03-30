@@ -1,0 +1,211 @@
+#navbar .nav-navbar {
+    max-height: 10vh;
+}
+
+#navbar a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    z-index: 300;
+}
+
+#navbar ul li {
+    margin-right: 25px;
+}
+
+#navbar ul li a {
+    display: inline-block;
+    margin-right: 10px;
+    transition: all 0.3s;
+    color: #040505;
+}
+
+#navbar ul li a:hover {
+    color: rgb(41, 138, 194);
+}
+
+#navbar .darkmode-toggle i {
+    transition: all 0.2s;
+    z-index: 400;
+}
+
+#navbar .darkmode-toggle .ph-sun-bold {
+    opacity: 0;
+}
+
+#navbar #menu_toggle {
+    opacity: 0;
+}
+
+#navbar #menu_toggle:checked + .menu_btn > span {
+    transform: rotate(45deg);
+}
+
+#navbar #menu_toggle:checked + .menu_btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#navbar #menu_toggle:checked + .menu_btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#navbar #menu_toggle:checked ~ .menu_box {
+    left: 0 !important;
+}
+
+#navbar .menu {
+    width: 30px;
+    height: 30px;
+    display: none !important;
+}
+
+#navbar .menu_btn {
+    position: absolute;
+    top: 13px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#navbar .menu_btn > span,
+#navbar .menu_btn > span::before,
+#navbar .menu_btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transition-duration: 0.5s;
+}
+
+#navbar .menu_btn > span::before {
+    content: "";
+    top: -7px;
+}
+
+#navbar .menu_btn > span::after {
+    content: "";
+    top: 7px;
+}
+
+/* home */
+#home-tipe {
+    background: linear-gradient(
+            90deg,
+            rgba(79, 189, 186, 1) 0%,
+            rgba(174, 254, 255, 1) 25%,
+            rgba(193, 255, 243, 0.17130602240896353) 44%
+        ),
+        url(../images/hotel.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#home {
+    height: 70vh;
+}
+
+/* #home .row h1 {
+    margin: 25% 0 0 0;
+}
+
+#home .row p {
+    margin: 1rem 2rem 0 0;
+}
+
+#home .row a {
+    margin-top: 1.5rem;
+} */
+
+#home .row {
+    height: 100%;
+}
+
+#home .row h1,
+#home .row p,
+#home .row a {
+    margin-left: 10%;
+}
+
+/* pesan */
+#pesan .card .img-kamar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#pesan .card .card-title {
+    margin-bottom: 0;
+}
+
+#pesan .card .nomor-kamar {
+    margin-bottom: 0.5rem;
+}
+
+.date {
+    border: 0;
+}
+
+.form-control:active,
+.form-control:focus {
+    border: 0 !important;
+    outline: none;
+}
+
+.card-pesan {
+    border-radius: 25px;
+    z-index: 200;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: -10%;
+}
+
+.card-pesan p {
+    margin-bottom: 0;
+}
+
+.card-pesan .btn {
+    border-radius: 15px;
+}
+
+.select {
+    padding: 20px 25px 20px 25px;
+    border-radius: 20px;
+    border: 2px solid #cfc0c0;
+}
+
+.jnsbs {
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    flex: 1;
+    background-image: none;
+    cursor: pointer;
+}
+
+#jns * {
+    font-weight: 600;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.card-biodata,
+.card-header {
+    border-radius: 25px !important;
+}
+
+footer {
+    height: 8vh;
+    background-color: #fff;
+}

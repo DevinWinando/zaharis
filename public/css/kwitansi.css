@@ -1,0 +1,30 @@
+body {
+    background-color: darkgray !important;
+}
+
+.kwitansi {
+    border-radius: 20px !important;
+}
+
+.kwitansi p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.atas {
+    background-color: #ffffff !important;
+    border-top-right-radius: 40px !important;
+    border-top-left-radius: 40px !important;
+}
+
+.tengah {
+    border-top: 2px dashed #797979 !important;
+    border-bottom: 2px dashed #797979 !important;
+    background-color: #aedbdb !important;
+}
+
+.bawah {
+    background-color: #ffffff !important;
+    border-bottom-right-radius: 40px !important;
+    border-bottom-left-radius: 40px !important;
+}
