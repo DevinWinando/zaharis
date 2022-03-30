@@ -90,9 +90,9 @@ class ClientController extends Controller
 
             DB::commit();
         }catch(\Exception $e){
+            dd($e);
             DB::rollback();
             return redirect()->back()->with('error', 'Gagal melakukan reservasi');
-            dd($e);
         }
         
         return redirect("/reservasi/$uuid");
