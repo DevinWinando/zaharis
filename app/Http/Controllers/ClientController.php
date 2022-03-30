@@ -92,6 +92,7 @@ class ClientController extends Controller
         }catch(\Exception $e){
             DB::rollback();
             return redirect()->back()->with('error', 'Gagal melakukan reservasi');
+            dd($e);
         }
         
         return redirect("/reservasi/$uuid");
