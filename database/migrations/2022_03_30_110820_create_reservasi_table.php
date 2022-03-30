@@ -19,6 +19,7 @@ class CreateReservasiTable extends Migration
             $table->date('selesai');
             $table->string('token');
             $table->string('status');
+            $table->string('harga_total');
             $table->foreignId('id_client')->constrained('client');
             $table->foreignId('id_kamar')->constrained('kamar');
             $table->timestamps();
