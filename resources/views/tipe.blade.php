@@ -25,7 +25,7 @@
                                 <select style="border: 0" name="tipe" class="form-control frm" id="floatingInput" onchange="location = this.value">
                                     <option value="" disabled selected hidden >-Pilih Tipe-</option>
                                     @foreach($tipeKamar as $item)
-                                    <option @if ($item->id == $id) value="{{ $item->id }}"  selected @endif value="/tipe/{{ $item->id }}">{{ $item->nama }}</option>
+                                    <option @if ($item->id == $id) value="{{ $item->id }}"  selected @endif value="/tipe-kamar/{{ $item->id }}">{{ $item->nama }}</option>
                                     @endforeach
                                 </select>
                             </div>
