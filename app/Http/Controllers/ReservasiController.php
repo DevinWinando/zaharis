@@ -36,6 +36,7 @@ class ReservasiController extends Controller
             }
             DB::commit();
         }catch(\Exception $e){
+            dd($e);
             DB::rollback();
             return redirect()->back()->with('error', 'Gagal proses reservasi');
         }
