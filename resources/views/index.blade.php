@@ -98,7 +98,7 @@
                                     <div class="d-flex justify-content-between align-items-center mt-3">
                                         <strong>Rp. {{ $item->tipe->harga }}/malam</strong>
                                         <div>
-                                            <button class="btn btn-primary" disabled>Pesan</button>
+                                            <button class="btn btn-primary" disabled>Piilh</button>
                                         </div>
                                     </div>
                                 </div>

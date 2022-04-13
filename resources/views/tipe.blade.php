@@ -73,7 +73,7 @@
                                                 <strong>Rp. {{ $item->tipe->harga }}/malam</strong>
                                                 <div>
                                                     <input type="checkbox"  class="btn-check" id="btn-check-{{ $loop->iteration }}" name="kamar[]" value="{{ $item->id }}">
-                                                    <label class="btn btn-primary" for="btn-check-{{ $loop->iteration }}">Pesan</label>
+                                                    <label class="btn btn-primary" for="btn-check-{{ $loop->iteration }}">Pilih</label>
                                                 </div>
                                             </div>
                                         </div>
